@@ -1,0 +1,38 @@
+---
+const info = {
+    title: "by @iDankest",
+    github: "https://github.com/iDankest",
+    linkedin: "https://linkedin.com/in/idankest",
+    x: "https://x.com/iDankest", 
+    profile: "./src/assets/Fotodeperfil.png",
+}
+const imgBand = {
+    github: "./src/assets/brand-github.svg",
+    linkedin: "./src/assets/brand-linkedin.svg",
+    x: "./src/assets/brand-x.svg",
+    sun: "./src/assets/sun.svg",
+    moon: "./src/assets/moon.svg",
+    appWindow: "./src/assets/app-window.svg",
+    mouse: "./src/assets/mouse.svg",
+    appWindowBlack: "./src/assets/app-window-black.svg",
+    mouseBlack: "./src/assets/mouse-black.svg",
+    moonBlack: "./src/assets/moon-black.svg",
+    sunBlack: "./src/assets/sun-black.svg",
+    infoCircle: "./src/assets/info-circle.svg",
+}
+---
+
+<section id="info">
+    <div id="title">{info.title}</div>
+    <div id="socials">
+        <a href={info.github} target="_blank">
+            <img src={imgBand.github} alt="GitHub" />
+        </a>
+        <a href={info.linkedin} target="_blank">
+            <img src={imgBand.linkedin} alt="LinkedIn" />
+        </a>
+        <a href={info.x} target="_blank">
+            <img src={imgBand.x} alt="X" />
+        </a>
+    </div>
+</section>
